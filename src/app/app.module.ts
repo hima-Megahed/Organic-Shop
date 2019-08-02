@@ -1,3 +1,4 @@
+import { AdminAuthGuard } from './admin-auth-guard.service';
 import { AuthGuard } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +23,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { APP_ROUTES } from './app.routes';
+import { UserService } from './user.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { APP_ROUTES } from './app.routes';
   ],
   providers: [
     AuthService,
-    AuthGuard
+    AuthGuard,
+    AdminAuthGuard,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
