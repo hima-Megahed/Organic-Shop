@@ -15,8 +15,8 @@ export class AdminProductsComponent implements OnDestroy {
   
   subscription: Subscription;
   products: MatTableDataSource<Product>;
-  displayedColumns: string[] = ['title', 'price', 'category', 'actions'];
-
+  displayedColumns: string[] = ['index', 'title', 'price', 'category', 'actions'];
+  index = 1;
   
 
   constructor(private productService: ProductService) {

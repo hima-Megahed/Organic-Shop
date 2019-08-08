@@ -14,7 +14,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { NotFoundComponent } from './not-found/not-found.component';
 
 export const APP_ROUTES: Routes = [
-    {path: '', component: HomeComponent},
+    {path: '', component: ProductsComponent},
     {path: 'products', component: ProductsComponent},
     {path: 'shopping-cart', component: ShoppingCartComponent},
     {path: 'login', component: LoginComponent},

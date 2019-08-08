@@ -1,3 +1,4 @@
+import { ProductFilterComponent } from './products/product-filter/product-filter.component';
 import { AppComponent } from './app.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 export const APP_DECLARATIONS = [
     AppComponent,
@@ -25,5 +27,7 @@ export const APP_DECLARATIONS = [
     AdminOrdersComponent,
     LoginComponent,
     NotFoundComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ProductFilterComponent,
+    ProductCardComponent
 ]
