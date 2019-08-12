@@ -1,3 +1,4 @@
+import { ShoppingCartService } from './shopping-cart.service';
 import { APP_DECLARATIONS } from './app.declarations';
 
 import { APP_IMPORTS } from './app.imports';
@@ -22,7 +23,8 @@ import 'hammerjs';
     AdminAuthGuard,
     UserService,
     CategoryService,
-    ProductService
+    ProductService,
+    ShoppingCartService
   ],
   bootstrap: [AppComponent]
 })

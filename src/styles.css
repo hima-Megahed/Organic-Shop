@@ -9,3 +9,8 @@ body {
 table {
     width: 100%;
 }
+
+.text-align-vertically{
+    margin-top: auto;
+    margin-bottom: auto;
+}
