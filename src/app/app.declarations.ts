@@ -1,3 +1,4 @@
+import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
 import { ProductFilterComponent } from './products/product-filter/product-filter.component';
 import { AppComponent } from './app.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
@@ -29,5 +30,6 @@ export const APP_DECLARATIONS = [
     NotFoundComponent,
     ProductFormComponent,
     ProductFilterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductQuantityComponent
 ]

@@ -30,10 +30,11 @@ export class ProductFormComponent {
       
   }
 
-  save(product) {
+  save(formModel) {
+    if(formModel.form.status !== "VALID") return;
 
-    if(this.id) this.productService.update(this.id, product);
-    else this.productService.create(product);
+    if(this.id) this.productService.update(this.id, formModel.value);
+    else this.productService.create(formModel.value);
     
     this.router.navigate(['/admin/products']);
   }

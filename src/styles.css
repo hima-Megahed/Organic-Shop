@@ -10,7 +10,27 @@ table {
     width: 100%;
 }
 
-.text-align-vertically{
+.text-align-vertically {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+/*Overriding Anular Material Styling*/
+.mat-sort-header-container {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+tr.mat-row {
+    height: 70px !important;
+}
+

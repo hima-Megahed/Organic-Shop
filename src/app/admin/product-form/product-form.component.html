@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-6">
-        <form #formModel="ngForm" (ngSubmit)="save(formModel.value)">
+        <form #formModel="ngForm" (ngSubmit)="save(formModel)">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input #title="ngModel" [(ngModel)]="product.title"  name="title" type="text" id="title" class="form-control" required>

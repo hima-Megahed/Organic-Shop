@@ -21,18 +21,6 @@ export class ProductCardComponent {
     this.CartService.addToCart(this.product);
   }
 
-  removeFromCart(){
-    this.CartService.removeFromCart(this.product);
-  }
-
-
-  getQuantity(){
-    if(!this.shoppingCart) return 0;
-
-    let item: ShoppingCartItem = this.shoppingCart.itemsMap[this.product.key];
-    return item ? item.quantity : 0;
-  }
-
   
 
 }

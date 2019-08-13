@@ -16,7 +16,7 @@ export class ShoppingCartComponent implements OnInit, OnDestroy {
   cart: ShoppingCart;
   items: MatTableDataSource<ShoppingCartItem>;
   subscription: Subscription;
-  displayedColumns: string[] = ['index', 'product','quantity', 'price'];
+  displayedColumns: string[] = ['imageUrl','product','quantity', 'price'];
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
@@ -27,7 +27,6 @@ export class ShoppingCartComponent implements OnInit, OnDestroy {
     this.subscription = (await this.shoppingCartService.getUserCart()).subscribe(cart => {
       this.cart = cart;
       this.items = new MatTableDataSource(cart.items);
-
       this.items.sort = this.sort;
       this.items.paginator = this.paginator;
     });
@@ -35,5 +34,9 @@ export class ShoppingCartComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  clearCart(){
+    this.shoppingCartService.clearCart();
   }
 }
