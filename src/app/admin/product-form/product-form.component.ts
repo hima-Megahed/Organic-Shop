@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { take } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-product-form',
+  selector: 'product-form',
   templateUrl: './product-form.component.html',
   styleUrls: ['./product-form.component.css']
 })
@@ -16,7 +16,7 @@ export class ProductFormComponent {
   id;
 
   constructor(
-    private categoryService: CategoryService,
+    categoryService: CategoryService,
     private router: Router,
     private route: ActivatedRoute,
     private productService: ProductService) {

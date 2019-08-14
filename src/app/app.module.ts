@@ -1,18 +1,20 @@
-import { ShoppingCartService } from './shopping-cart.service';
 import { APP_DECLARATIONS } from './app.declarations';
 
 import { APP_IMPORTS } from './app.imports';
 
+import { ShoppingCartService } from './shopping-cart.service';
 import { ProductService } from './product.service';
 import { CategoryService } from './category.service';
 import { AdminAuthGuard } from './admin-auth-guard.service';
 import { AuthGuard } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { UserService } from './user.service';
+import { OrderService } from './order.service';
 
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import 'hammerjs';
+
 
 @NgModule({
   declarations: APP_DECLARATIONS,
@@ -24,7 +26,8 @@ import 'hammerjs';
     UserService,
     CategoryService,
     ProductService,
-    ShoppingCartService
+    ShoppingCartService,
+    OrderService
   ],
   bootstrap: [AppComponent]
 })

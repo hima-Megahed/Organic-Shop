@@ -16,7 +16,8 @@ export class AdminProductsComponent implements OnDestroy {
   subscription: Subscription;
   products: MatTableDataSource<Product>;
   displayedColumns: string[] = ['index', 'title', 'price', 'category', 'actions'];
-  
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
   constructor(private productService: ProductService) {
     this.subscription = this.productService.getAll()
@@ -35,10 +36,7 @@ export class AdminProductsComponent implements OnDestroy {
 
     this.products.filter = query.trim().toLowerCase();
   }
-
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-
+  
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }

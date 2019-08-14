@@ -14,6 +14,9 @@ import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-cart-summary.component';
+import { ShippingFormComponent } from './shipping-form/shipping-form.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 export const APP_DECLARATIONS = [
     AppComponent,
@@ -31,5 +34,8 @@ export const APP_DECLARATIONS = [
     ProductFormComponent,
     ProductFilterComponent,
     ProductCardComponent,
-    ProductQuantityComponent
+    ProductQuantityComponent,
+    ShoppingCartSummaryComponent,
+    ShippingFormComponent,
+    OrderDetailsComponent
 ]
