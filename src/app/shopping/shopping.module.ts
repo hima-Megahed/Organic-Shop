@@ -35,15 +35,6 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
     OrderDetailsComponent,
   ],
   imports: [
-    CommonModule,
-    CustomFormsModule,
-    FormsModule,
-    BrowserModule,
-    MatTableModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSortModule,
-    MatPaginatorModule,
     RouterModule.forChild([
       { path: 'products', component: ProductsComponent },
       { path: 'shopping-cart', component: ShoppingCartComponent },
