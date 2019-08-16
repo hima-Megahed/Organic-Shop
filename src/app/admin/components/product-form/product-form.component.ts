@@ -12,7 +12,7 @@ import { take } from 'rxjs/operators';
 })
 export class ProductFormComponent {
   categories$: Observable<any>;
-  product = {};
+  product: any = {};
   id;
 
   constructor(
