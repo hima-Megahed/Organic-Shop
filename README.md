@@ -1,6 +1,8 @@
 # Organic Shop
 Organic shop is an E-commerce app that allows users to shop their groceries online with a nice look & feel web app and real-time data synchronization across the multiple states of the application while focusing on the security manner through adding Routers AuthGuards.
 
+## Demo
+You can explore the app on : https://organic-shop-b7578.firebaseapp.com
 ## Technologies Stack
 - Angular 7
 - Bootatrap 4 | Font-Awesome | Sass
