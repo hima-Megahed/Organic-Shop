@@ -1,9 +1,10 @@
 # Organic Shop
-Organic shop is an E-commerce app that allows users to shop their groceries online with a nice look & feel web app and real-time data synchronization across the multiple states of the application while focusing on the security manner through adding Routers AuthGuards.
+Organic-Shop 🍊 is an E-commerce app that allows users to shop their groceries online with a nice look & feel web app and real-time data synchronization across the multiple states of the application while focusing on the security manner through adding Routers AuthGuards.
 
-## Demo
+## Demo 👇🏼
 You can explore the app on : https://organic-shop-b7578.firebaseapp.com
-## Technologies Stack
+
+## Technologies Stack 🤓
 - Angular 7
 - Bootatrap 4 | Font-Awesome | Sass
 - Implementing user SignIn/SignUp using **Firebase Authentication**
@@ -12,7 +13,7 @@ You can explore the app on : https://organic-shop-b7578.firebaseapp.com
 - Dependancy Injection
 - Securing the App through **route Guards**
 
-## Installation
+## Installation 👨🏼‍💻
 1. Fork it using git run this command in the terminal
 > git clone https://github.com/hima-Megahed/DatingApp.git
 2. Then run
@@ -20,6 +21,6 @@ You can explore the app on : https://organic-shop-b7578.firebaseapp.com
 3. Run Organic-Shop by running the command
 > ng serve
 
-## Dependencies
+## Dependencies 📝
 - Angular CLI ^8.0.3
 - Firebase  ^6.3.3
