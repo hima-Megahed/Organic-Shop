@@ -15,7 +15,7 @@ You can explore the app on : https://organic-shop-b7578.firebaseapp.com
 
 ## Installation 👨🏼‍💻
 1. Fork it using git run this command in the terminal
-> git clone https://github.com/hima-Megahed/DatingApp.git
+> git clone https://github.com/hima-Megahed/Organic-Shop.git
 2. Then run
 > npm install
 3. Run Organic-Shop by running the command
